@@ -1,1 +1,53 @@
-<p>signup works!</p>
+<div class="outer">
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-3 offset-md-3">
+                <div class="panel border bg-white">
+                    <div class="panel-heading">
+                        <h3 class="pt-3 font-weight-bold">Inscription</h3>
+                    </div>
+                    <div class="form-body p-3">
+                        <form>
+                            <div class="form-group pt-3">
+                                <div class="input-field">
+                                    <span class="fa fa-user p-2"></span>
+                                    <input type="text" placeholder="Nom d'utilisateur">
+                                </div>
+                            </div>
+                            <div class="form-group pt-3">
+                                <div class="input-field">
+                                    <span class="fa fa-envelope p-2"></span>
+                                    <input type="email" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group pt-3">
+                                <div class="input-field">
+                                    <span class="fa fa-lock p-2"></span>
+                                    <input [type]="type" placeholder="Mot de passe">
+                                    <span (click)="hideShowPass()" class="fa {{eyeIcon}}"></span>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block mt-4 w-100">S'inscrire</button>
+                            <div class="text-center pt-4 text-muted">Vous avez déjà un compte ?
+                                <a id="already" [routerLink]="['/login']" routerLinkActive="router-link-active">
+                                    Connectez-vous
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- <div class="mx-3 my-2 py-2 bordert">
+                        <div class="text-center py-3">
+                            <a href="https://www.google.com" target="_blank" class="px-2">
+                                <img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png"
+                                    alt="logo Google">
+                            </a>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
