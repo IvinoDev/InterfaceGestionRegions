@@ -1,8 +1,23 @@
-.footer {
-    flex-shrink: 0;
-    flex-grow: 0;
-    background: #FF7900;
-    padding: 3px 15px;
-    color: #fff;
-    margin-top: 5px;
+.nga-footer {
+    background-color: #ff7900 !important;
+    color: white;
+}
+
+.nga-footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.nga-footer a:hover,
+.nga-footer a:focus {
+    color: rgb(251, 251, 250);
+    text-decoration: underline;
+}
+
+.nga-footer .hint {
+    background-color: #1976d2;
+}
+
+.nga-footer .hint:hover {
+    opacity: 0.8;
 }
