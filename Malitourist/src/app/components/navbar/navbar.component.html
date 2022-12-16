@@ -1,8 +1,8 @@
 <section class="ftco-section">
     <div class="container">
-        <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar">
+        <nav class="navbar navbar-fixed-top navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="Logo MaliTourist" class="logo"></a>
+                <a class="navbar-brand" [routerLink]="['/home']" routerLinkActive="router-link-active" ><img src="assets/img/logo.png" alt="Logo MaliTourist" class="logo"></a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                     aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,9 +12,8 @@
                 <div class="collapse navbar-collapse" id="ftco-nav">
                     <ul class="navbar-nav ml-auto mr-md-3">
                         <li class="nav-item active"><a [routerLink]="['/home']" routerLinkActive="router-link-active"  class="nav-link">Acceuil</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Regions</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Pays</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link">Regions</a></li>
+                        <li class="nav-item"><a class="nav-link">Pays</a></li>
                         <li class="nav-item"><a [routerLink]="['signup']" routerLinkActive="router-link-active" class="nav-link">Inscription</a></li>
                         <li class="nav-item"><a [routerLink]="['login']" routerLinkActive="router-link-active" class="nav-link">Connexion</a></li>
                     </ul>
@@ -27,9 +26,7 @@
 
 <script>
     (function ($) {
-
         "use strict";
-
         $('nav .dropdown').hover(function () {
             var $this = $(this);
             $this.addClass('show');
@@ -41,6 +38,5 @@
             $this.find('> a').attr('aria-expanded', false);
             $this.find('.dropdown-menu').removeClass('show');
         });
-
     })(jQuery);
 </script>
