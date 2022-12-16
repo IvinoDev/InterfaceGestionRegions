@@ -8,30 +8,63 @@
 //     height: 100vh;
 // }
 
-
 .second-content img {
+    border-radius: 10px;
+}
+
+.second-content h3 {
+    color: #ff7900;
+}
+
+.right-img {
     box-sizing: border-box;
     background-size: cover;
-    padding: 0px;
-    width: 150px;
-    height: 150px;
+    padding: 2px;
+    width: 205px;
+    height: 170px;
+    border-radius: 10px;
 }
 
 .left-img {
-    width: 250px;
-    height: 250px;
+    width: 550px;
+    height: 350px;
+
 
 }
 
 .second-content {
     margin-left: 7%;
     margin-right: 7%;
+    margin-top: 3%;
 }
 
 .text {
     margin-top: 7%;
     margin-bottom: 2%;
 }
+
+.titre {
+    margin-left: 7%;
+}
+
+
+// First Slide
+$carousel-control-transition: opacity .15s ease;
+
+$carousel-caption-width: 70%;
+$carousel-caption-padding-y: 1.25rem;
+$carousel-caption-spacer: 1.25rem;
+
+$carousel-transition-duration: .15s;
+$carousel-transition: transform $carousel-transition-duration ease-in-out; 
+
+
+//second carousel
+.secondCarousel {
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
 
 // .myimg img {
 //     width: auto;
