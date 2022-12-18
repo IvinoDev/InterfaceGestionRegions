@@ -8,75 +8,75 @@
 //     height: 100vh;
 // }
 
-// .second-content img {
-//     border-radius: 10px;
-// }
+.second-content img {
+    border-radius: 10px;
+}
 
-// .second-content h3 {
-//     color: #ff7900;
-// }
+.second-content h3 {
+    color: #ff7900;
+}
 
-// .right-img {
-//     box-sizing: border-box;
-//     background-size: cover;
-//     padding: 2px;
-//     width: 205px;
-//     height: 170px;
-//     border-radius: 10px;
-// }
+.right-img {
+    box-sizing: border-box;
+    background-size: cover;
+    padding: 2px;
+    width: 205px;
+    height: 170px;
+    border-radius: 10px;
+}
 
-// .left-img {
-//     width: 550px;
-//     height: 350px;
+.left-img {
+    width: 550px;
+    height: 350px;
 
 
-// }
+}
 
-// .second-content {
-//     margin-left: 7%;
-//     margin-right: 7%;
-//     margin-top: 3%;
-// }
+.second-content {
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 3%;
+}
 
 .text {
     margin-top: 7%;
     margin-bottom: 2%;
 }
 
-// .titre {
-//     margin-left: 7%;
-// }
+.titre {
+    margin-left: 7%;
+}
 
 //CSS Pur 
-.pagedeux {
-    display: flex;
-    margin-top: 30px;
-    padding: 100px;
-    .gauche {
-        width: 650px;
-        margin-right: 60px;
-        img {
-            width: 450px;
-            height: 250px;
-        }
-    }
-    .droite {
-        margin-top: 42px;
-        img {
-            width: 250px;
-            height: 170px;
-            border-radius: 10px;
-        }
-        .enhaut{
-            .image {
-                display: flex;
-                justify-content: space-around;
-                // margin-left: 5px;
-            }
-        }
+// .pagedeux {
+//     display: flex;
+//     margin-top: 30px;
+//     padding: 100px;
+//     .gauche {
+//         width: 650px;
+//         margin-right: 60px;
+//         img {
+//             width: 450px;
+//             height: 250px;
+//         }
+//     }
+//     .droite {
+//         margin-top: 42px;
+//         img {
+//             width: 250px;
+//             height: 170px;
+//             border-radius: 10px;
+//         }
+//         .enhaut{
+//             .image {
+//                 display: flex;
+//                 justify-content: space-around;
+//                 // margin-left: 5px;
+//             }
+//         }
 
-    }
-}
+//     }
+// }
 
 
 
@@ -91,16 +91,32 @@ $carousel-caption-width: 70%;
 $carousel-caption-padding-y: 1.25rem;
 $carousel-caption-spacer: 1.25rem;
 
-$carousel-transition-duration: .15s;
+$carousel-transition-duration: .10s;
 $carousel-transition: transform $carousel-transition-duration ease-in-out; 
 
 
 //second carousel
 .secondCarousel {
     margin-top: 2%;
-    margin-bottom: 1%;
+    margin-bottom: 0.5%;
 }
 
+.carousel-caption {
+    font-size: 25px;
+}
+
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited {
+    color: white;
+    font-size: 15px;
+    background-color: #FF7900 !important;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: black;
+}
 
 // .myimg img {
 //     width: auto;
@@ -119,6 +135,8 @@ $carousel-transition: transform $carousel-transition-duration ease-in-out;
 //     margin-left: 50px;
 // }
 
+
+//Ancien decouvrez le Mali
 @media only screen and (max-width: 767px) {
     .pagedeux {
             display: flex;

@@ -12,6 +12,7 @@ import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { RegionComponent } from './pages/region/region.component';
+import { DetailregionComponent } from './pages/detailregion/detailregion.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { RegionComponent } from './pages/region/region.component';
     SignupComponent,
     NavbarComponent,
     FooterComponent,
-    RegionComponent
+    RegionComponent,
+    DetailregionComponent
   ],
   imports: [
     BrowserModule,
