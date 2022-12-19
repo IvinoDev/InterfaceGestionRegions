@@ -1,0 +1,156 @@
+.first-section {
+    margin-top: 7%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 4px 29px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    overflow-y: hidden;
+}
+
+.first-section img {
+    border-radius: 10px 10px;
+}
+
+.first-section p {
+    text-align: justify;
+    padding: 5%;
+    line-height: 35px;
+    align-content: center;
+}
+
+.titre {
+    text-align: center;
+    font-weight: bold;
+    color: #FF7900;
+    margin-top: 3%;
+}
+
+.title-search {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    justify-content: space-around;
+    background-color: #FF7900;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+.title-search h3 {
+    color: white;
+    font-weight: bold;
+}
+
+.btn-search input {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #fff;
+}
+
+.btn-search {
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: #fff; */
+}
+
+/* section-card */
+.section-card {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    /* grid-row: 2; */
+}
+
+.cardes {
+    width: 90%;
+    margin: 4%;
+    /* border: 1px solid; */
+    box-shadow: 0px 4px 29px rgba(0, 0, 0, 0.25);
+}
+
+.images-carde img {
+    width: 100%;
+}
+
+.title-carde h3 {
+    text-align: center;
+    color: #5B7CFD;
+    font-weight: bold;
+}
+
+.description-carde p {
+    margin: 5%;
+    text-align: justify;
+}
+
+.bouton-carde {
+    text-align: center;
+    margin: 3%;
+}
+
+.bouton-carde .btn {
+    background-color: #FF6B00;
+}
+
+.bouton-carde a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h2 {
+    margin-left: 37%;
+    margin-top: 3%;
+    color: #ff7900;
+}
+
+.img-region img {
+    margin-top: 2%;
+    height: 295px;
+    width: 360px;
+}
+
+
+
+/* =======================================================================  MEDI QUERY MOBILE SCREEN +++++++++++++++++++++++ */
+
+@media screen and (max-width: 767px) {
+
+    .first-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+
+    }
+
+    .first-section img {
+        border-radius: 10px 10px;
+        width: 100%;
+        /* object-fit: contain; */
+    }
+
+    /* SECTION BARRE DE RECHERCHE */
+    .title-search {
+        display: flex;
+        flex-direction: row;
+        /* margin:2% ; */
+    }
+
+    .title-search h3 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+
+    /* SECTION CARDES */
+    .section-card {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        /* grid-row: 2; */
+    }
+
+    /* 
+    .first-section p{
+       
+    } */
+}

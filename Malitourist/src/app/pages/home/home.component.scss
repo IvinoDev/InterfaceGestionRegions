@@ -105,6 +105,10 @@ $carousel-transition: transform $carousel-transition-duration ease-in-out;
     font-size: 25px;
 }
 
+.carousel-item img {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
 .btn-primary,
 .btn-primary:active,
 .btn-primary:visited {
