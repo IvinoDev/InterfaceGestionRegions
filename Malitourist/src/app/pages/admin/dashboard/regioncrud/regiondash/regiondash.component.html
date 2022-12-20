@@ -1,0 +1,82 @@
+<div class="container">
+    <div class="card">
+        <div class="img-region">
+            <img src="./assets/img/regiondash.png" alt="Carte régions du Mali">
+        </div>
+        <mat-card-header class="centrer">
+            <button mat-flat-button color="primary" class="place" (click)="ajouterRegion()">Ajouter une nouvelle
+                région</button>
+        </mat-card-header>
+        <div class="card-body">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h2>Liste des régions</h2>
+                </div>
+                <div class="panel-body">
+                    <table id="example" class="table table-striped table-bordered table-sm row-border hover"
+                        cellspacing="0" width="100%">
+
+                        <thead>
+                            <tr>
+                                <th>Code</th>
+                                <th>Nom</th>
+                                <th>Activité</th>
+                                <th>Superficie</th>
+                                <th>Pays</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- *ngFor="let employee of employees | async" -->
+                            <tr>
+                                <td>MD</td>
+                                <td>Bamako</td>
+                                <td>Commerce</td>
+                                <td>13 780</td>
+                                <td>Mali</td>
+
+                                <td><button style='margin-right:16px' class="btn btn-danger">Supprimer</button>
+                                    <button style='margin-right:16px' class="btn btn-success" style="margin-left: 10px"
+                                        (click)="modifierRegion(1)">Modifier</button>
+                                    <button style='margin-right:16px' class="btn btn-success blue"
+                                        style="margin-left: 10px" (click)="modifierRegion(3)">Voir</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MD</td>
+                                <td>Bamako</td>
+                                <td>Commerce</td>
+                                <td>13 780</td>
+                                <td>Mali</td>
+
+                                <td><button style='margin-right:16px' class="btn btn-danger">Supprimer</button>
+                                    <button style='margin-right:16px' class="btn btn-success" style="margin-left: 10px"
+                                        (click)="modifierRegion(2)">Modifier</button>
+                                    <button style='margin-right:16px' class="btn btn-success blue"
+                                        style="margin-left: 10px" (click)="modifierRegion(3)">Voir</button>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MD</td>
+                                <td>Bamako</td>
+                                <td>Commerce</td>
+                                <td>13 780</td>
+                                <td>Mali</td>
+
+                                <td><button style='margin-right:16px' class="btn btn-danger">Supprimer</button>
+                                    <button style='margin-right:16px' class="btn btn-success" style="margin-left: 10px"
+                                        (click)="modifierRegion(3)">Modifier</button>
+                                    <button style='margin-right:16px' class="btn btn-success blue"
+                                        style="margin-left: 10px" (click)="modifierRegion(3)">Voir</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <mat-divider></mat-divider>
+    </div>
+</div>
+

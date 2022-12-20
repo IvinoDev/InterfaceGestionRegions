@@ -13,6 +13,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { RegionComponent } from './pages/region/region.component';
 import { DetailregionComponent } from './pages/detailregion/detailregion.component';
+import { DataTablesModule } from 'angular-datatables';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatIconModule} from '@angular/material/icon';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
+import { RegiondashComponent } from './pages/admin/dashboard/regioncrud/regiondash/regiondash.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -23,14 +34,25 @@ import { DetailregionComponent } from './pages/detailregion/detailregion.compone
     NavbarComponent,
     FooterComponent,
     RegionComponent,
-    DetailregionComponent
+    DetailregionComponent,
+    DashboardComponent,
+    RegiondashComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     RouterModule,
-    CarouselModule
+    CarouselModule,
+    DataTablesModule,
+    MatGridListModule,
+    MatCardModule,
+    MatButtonModule,
+    MatDividerModule,
+    MatIconModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,32 @@
+.centrer {
+    margin-left: auto;
+    padding: 8px;
+    color: white;
+    background-color: #ff7900;
+    margin-right: 1%;
+    border-radius: 10%;
+}
+
+.centrer:hover {
+    background-color: black;
+}
+
+.blue {
+    background-color: rgb(76, 59, 233);
+}
+
+.img-region {
+    display: flex;
+    justify-content: center;
+
+}
+
+.card {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.card-body {
+    text-align: center;
+}
