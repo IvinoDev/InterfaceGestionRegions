@@ -24,6 +24,7 @@ import { DashboardComponent } from './pages/admin/dashboard/dashboard.component'
 import { RegiondashComponent } from './pages/admin/dashboard/regioncrud/regiondash/regiondash.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AddregionComponent } from './pages/admin/dashboard/regioncrud/addregion/addregion.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { AddregionComponent } from './pages/admin/dashboard/regioncrud/addregion
     DetailregionComponent,
     DashboardComponent,
     RegiondashComponent,
-    AddregionComponent
+    AddregionComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

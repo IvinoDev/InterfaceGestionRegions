@@ -1,3 +1,5 @@
+import { ProfileComponent } from './pages/profile/profile.component';
+import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
 import { AddregionComponent } from './pages/admin/dashboard/regioncrud/addregion/addregion.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -15,7 +17,9 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'region', component: RegionComponent},
   {path: 'detailregion', component: DetailregionComponent},
+  {path: 'dashboard', component: DashboardComponent},
   {path: 'regiondash', component: RegiondashComponent},
+  {path: 'profile', component: ProfileComponent},
   {path: 'addregion', component: AddregionComponent}
 ];
 
