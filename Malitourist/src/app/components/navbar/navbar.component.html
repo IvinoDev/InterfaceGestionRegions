@@ -14,8 +14,12 @@
                         <li class="nav-item active"><a  href="/home" [routerLink]="['/home']" routerLinkActive="router-link-active"  class="nav-link">Acceuil</a></li>
                         <li class="nav-item"><a class="nav-link" [routerLink]="['/region']" routerLinkActive="router-link-active" >Regions</a></li>
                         <li class="nav-item"><a class="nav-link">Pays</a></li>
-                        <li class="nav-item"><a [routerLink]="['signup']" routerLinkActive="router-link-active" class="nav-link">Inscription</a></li>
-                        <li class="nav-item"><a [routerLink]="['login']" routerLinkActive="router-link-active" class="nav-link">Connexion</a></li>
+                        <li class="nav-item"><a [routerLink]="['signup']" routerLinkActive="router-link-active" class="nav-link" *ngIf="!user">Inscription</a></li>
+                        <li class="nav-item"><a [routerLink]="['dashboard']" routerLinkActive="router-link-active" class="nav-link" *ngIf="user">{{user.username}}</a>
+                        </li>
+                        <li class="nav-item"><a [routerLink]="['login']" routerLinkActive="router-link-active" class="nav-link" *ngIf="!user">Connexion</a></li>
+                        <li class="nav-item"><button class="nav-link">Déconnexion</button>
+                        </li>
                     </ul>
                 </div>
             </div>

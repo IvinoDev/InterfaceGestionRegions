@@ -1,0 +1,61 @@
+<h2>Ajouter une region</h2>
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <div class="mb-3">
+        <label for="coderegion" class="form-label">Code de la région</label>
+        <input type="text" class="form-control" id="coderegion" 
+        aria-describedby="coderegion" name="coderegions" ngModel>
+        <div id="coderegion" class="form-text">mishi bishi</div>
+    </div>
+    <div class="mb-3">
+        <label for="nom" class="form-label">Nom</label>
+        <input type="text" class="form-control" 
+        id="nom" name = "nom" ngModel>
+    </div>
+    <div class="mb-3">
+        <label for="langue" class="form-label">Langue</label>
+        <input type="text" class="form-control" 
+        id="langue" name = "langue" ngModel>
+    </div>
+    <div class="mb-3">
+        <label for="superficie" class="form-label">Superficie</label>
+        <input type="text" class="form-control" 
+        id="superficie" name = "superficie" ngModel>
+    </div>
+    <div class="mb-3">
+        <label for="domaine" class="form-label">Domaine Activité</label>
+        <input type="text" class="form-control" 
+        id="domaine"  name = "domaine" ngModel>
+    </div>
+    <div class="mb-3">
+        <label for="src" class="form-label">Carte</label>
+        <input type="text" class="form-control" 
+        id="src" name="src" ngModel>
+    </div>
+    <!--Image-->
+    <label class="form-label" for="image">Choisir une image</label>
+    <input type="file" class="form-control" id="customFile"
+    name = "image" ngModel
+     (change)="OnFileSelect($event)" />
+    <button type="submit" class="btn btn-primary">Ajouter</button>
+   
+    
+    <!--Avatar-->
+    <!-- <div>
+        <div class="d-flex justify-content-center mb-4">
+            <img src="https://mdbootstrap.com/img/Photos/Others/placeholder-avatar.jpg" class="rounded-circle"
+                alt="example placeholder" style="width: 200px;" />
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="btn btn-primary btn-rounded">
+                <label class="form-label text-white m-1" for="customFile2">Choose file</label>
+                <input type="file" class="form-control d-none" id="customFile2" />
+            </div>
+        </div>
+    </div> 
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+
+-->
+</form>

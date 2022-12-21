@@ -1,3 +1,4 @@
+import { AddregionComponent } from './pages/admin/dashboard/regioncrud/addregion/addregion.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { RegiondashComponent } from './pages/admin/dashboard/regioncrud/regiondash/regiondash.component';
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'region', component: RegionComponent},
   {path: 'detailregion', component: DetailregionComponent},
-  {path: 'regiondash', component: RegiondashComponent}
+  {path: 'regiondash', component: RegiondashComponent},
+  {path: 'addregion', component: AddregionComponent}
 ];
 
 @NgModule({

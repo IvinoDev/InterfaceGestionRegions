@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  user: any;
   constructor() { }
 
   ngOnInit(): void {
+    if (localStorage["user"]) {
+      this.user = JSON.parse(localStorage["user"]);
+    }
   }
 
 }

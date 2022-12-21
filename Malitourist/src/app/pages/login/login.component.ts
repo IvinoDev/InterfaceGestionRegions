@@ -25,14 +25,24 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit() {
-  console.log(this.form)
-  this.http.post('http://localhost:8080/api/auth/signin', this.form).subscribe(
-    data => console.log(data),
+  // console.log(this.form)
+  this.http.post('http://localhost:8080/api/auth/signin', this.form).subscribe(data =>
+  {
+    if(data) {
+      let result = data;
+      localStorage.setItem("user", JSON.stringify(result));
+      this.router.navigate(['/home'])
+    } else {
+      console.log("identifiants incorrects");
 
-    err => console.log(err),
-    //this.router.navigate(['/accueil'])
-  );
-  this.router.navigate(['/home'])
+      
+    }
+   
+  }, error => {
+    console.log("identifiants non corrects");
+    
+  });
+  
 
 }
 

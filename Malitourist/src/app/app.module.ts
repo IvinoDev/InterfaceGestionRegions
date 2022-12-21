@@ -23,6 +23,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
 import { RegiondashComponent } from './pages/admin/dashboard/regioncrud/regiondash/regiondash.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AddregionComponent } from './pages/admin/dashboard/regioncrud/addregion/addregion.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { HttpClientModule } from '@angular/common/http';
     RegionComponent,
     DetailregionComponent,
     DashboardComponent,
-    RegiondashComponent
+    RegiondashComponent,
+    AddregionComponent
   ],
   imports: [
     BrowserModule,
