@@ -3,39 +3,38 @@
     <div class="mb-3">
         <label for="coderegion" class="form-label">Code de la région</label>
         <input type="text" class="form-control" id="coderegion" 
-        aria-describedby="coderegion" name="coderegions" ngModel>
+        aria-describedby="coderegion" name="coderegions" [(ngModel)] = "regions.codeRegions">
         <div id="coderegion" class="form-text">mishi bishi</div>
     </div>
     <div class="mb-3">
         <label for="nom" class="form-label">Nom</label>
         <input type="text" class="form-control" 
-        id="nom" name = "nom" ngModel>
+        id="nom" name = "nom" [(ngModel)] = "regions.nom">
     </div>
     <div class="mb-3">
         <label for="langue" class="form-label">Langue</label>
         <input type="text" class="form-control" 
-        id="langue" name = "langue" ngModel>
+        id="langue" name = "langue" [(ngModel)] = "regions.langue">
     </div>
     <div class="mb-3">
         <label for="superficie" class="form-label">Superficie</label>
         <input type="text" class="form-control" 
-        id="superficie" name = "superficie" ngModel>
+        id="superficie" name = "superficie" [(ngModel)] = "regions.superficie_regions">
     </div>
     <div class="mb-3">
         <label for="domaine" class="form-label">Domaine Activité</label>
         <input type="text" class="form-control" 
-        id="domaine"  name = "domaine" ngModel>
+        id="domaine"  name = "domaine"[(ngModel)] = "regions.domaine_activite">
     </div>
     <div class="mb-3">
         <label for="src" class="form-label">Carte</label>
         <input type="text" class="form-control" 
-        id="src" name="src" ngModel>
+        id="src" name="src" [(ngModel)] = "regions.src">
     </div>
     <!--Image-->
     <label class="form-label" for="image">Choisir une image</label>
     <input type="file" class="form-control" id="customFile"
-    name = "image" ngModel
-     (change)="OnFileSelect($event)" />
+     (change)="OnFileSelect($event)" >
     <button type="submit" class="btn btn-primary">Ajouter</button>
    
     

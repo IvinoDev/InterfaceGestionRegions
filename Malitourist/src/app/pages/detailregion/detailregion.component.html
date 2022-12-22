@@ -1,14 +1,19 @@
- <div class="container-fluid bg-success">
+ <div class="container-fluid">
     <div class="row">
         <div class="col-12 col-md-4 town">
-            <div class="card">
-                <img src="" alt="">
-                <h3>Titre region</h3>
-                <p>description region</p>
-            </div>
-            hhhhhhhhhhhhhhhhhh
+            <div class="card p-3">
+                <img [src]="region?.image?.url" alt="">
+                <h4>{{region.nom}}</h4>
+                <h6>{{region.pays}}</h6>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+             including versions of Lorem Ipsum.</p>
+                <hr>
+                COMMENTAIRES
+            </div> 
         </div>
-        <div class="col-12 col-md-8 map">
+        <div class="map col-12 col-md-8">
+        <!-- <h3>Localisation</h3> -->
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7745.767001524767!2d-4.557314600000001!3d13.905910949999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe3836744a791bb3%3A0x18e291b9af98fb24!2zRGplbm7DqQ!5e0!3m2!1sfr!2sml!4v1671240282247!5m2!1sfr!2sml"
             width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"

@@ -33,11 +33,11 @@
     
 <div class="section-card container">
 
-    <div class="cardes">
+    <div class="cardes" *ngFor="let item of list">
 
-        <div class="images-carde">  <img src="illustration region" alt="Régions"></div>
+        <div class="images-carde">  <img [src]="item.image.url" alt="Régions"></div>
         
-        <div class="title-carde"><h3>nom</h3></div>
+        <div class="title-carde"><h3>{{item.nom}}</h3></div>
         <div class="description-carde"> <p>description</p></div>
         <div class="bouton-carde">Voir plus</div>
     </div>

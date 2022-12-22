@@ -15,6 +15,7 @@ export class AddregionComponent implements OnInit {
   models: any;
   user: any;
   regions: Regions = {
+    id: 0,
     codeRegions: "",
     nom: "",
     langue: "",
@@ -25,8 +26,9 @@ export class AddregionComponent implements OnInit {
       file: new File(["test"],'text.png',{type: 'application/json'}),
       url: ''
     }
-};
     
+};
+  
   constructor(private sanitizer: DomSanitizer, private http: HttpClient) {}
 
   ngOnInit(): void {
@@ -36,15 +38,16 @@ export class AddregionComponent implements OnInit {
   }
 
   onSubmit(form: any) {
-    console.log(form.value);
+    console.log(this.regions);
     
-    const formData = this.prepareFormdata(form)
-    console.log(form.value);
+    const formData = this.prepareFormdata(this.regions)
+    console.log(this.user.accessToken);
+
     
     let header = new HttpHeaders({
-      Authorization: this.user.accessToken
+      Authorization: "Bearer " + this.user.accessToken
     })
-    return this.http.post("127.0.0.1:8080/regions/create", formData, {headers: header}).subscribe(data => {
+    return this.http.post("http://localhost:8080/regions/create", formData, {headers: header}).subscribe(data => {
       console.log(data);
       
     })

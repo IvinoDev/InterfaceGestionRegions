@@ -1,3 +1,39 @@
+.card {
+    margin-top: 3%;
+    text-align: left;
+    width: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-bottom: 2%;
+}
+
+
+img {
+    border-radius: 15px;
+    text-align: center;
+    // margin-top: -1%;
+}
+
+h4 {
+    margin-top: 2%;
+    color: #FF7900;
+    font-weight: bold;
+}
+
+h6 {
+    margin-top: -1%;
+    font-weight: 400;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+
 // iframe {
 //     width: 65%;
 //     height: 700px;

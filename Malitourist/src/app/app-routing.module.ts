@@ -16,7 +16,7 @@ const routes: Routes = [
   {path:'signup', component: SignupComponent},
   {path: 'home', component: HomeComponent},
   {path: 'region', component: RegionComponent},
-  {path: 'detailregion', component: DetailregionComponent},
+  {path: 'detailregion/:id', component: DetailregionComponent},
   {path: 'dashboard', component: DashboardComponent},
   {path: 'regiondash', component: RegiondashComponent},
   {path: 'profile', component: ProfileComponent},
