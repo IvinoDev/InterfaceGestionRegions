@@ -1,3 +1,4 @@
+import { AdminPagesGuard } from './guard/admin-pages.guard';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
 import { AddregionComponent } from './pages/admin/dashboard/regioncrud/addregion/addregion.component';
@@ -17,10 +18,10 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'region', component: RegionComponent},
   {path: 'detailregion/:id', component: DetailregionComponent},
-  {path: 'dashboard', component: DashboardComponent},
-  {path: 'regiondash', component: RegiondashComponent},
+  {path: 'dashboard', component: DashboardComponent, canActivate:[AdminPagesGuard]},
+  {path: 'regiondash', component: RegiondashComponent, canActivate:[AdminPagesGuard]},
   {path: 'profile', component: ProfileComponent},
-  {path: 'addregion', component: AddregionComponent}
+  {path: 'addregion', component: AddregionComponent, canActivate:[AdminPagesGuard]}
 ];
 
 @NgModule({

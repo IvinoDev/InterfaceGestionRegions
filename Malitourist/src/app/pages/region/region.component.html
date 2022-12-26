@@ -26,7 +26,18 @@
     <div class="title-search container">
         <div class="container"><h3>Rechercher une région</h3></div>
         <div class="btn-search">
-            <input type="search" class="btn" placeholder="Recherche...">
+            <ng-autocomplete [data]="list" [searchKeyword]="text" placeholder="Recherche..." 
+            
+                [itemTemplate]="itemTemplate"
+                [notFoundTemplate]="notFoundTemplate">
+            </ng-autocomplete>
+            <ng-template #itemTemplate let-item>
+                <a [innerHTML]="item.nom"></a>
+            </ng-template>
+            <ng-template #notFoundTemplate let-notFound>
+                <div innerHTML="aucun resultat."></div>
+            </ng-template>
+            <!-- <input type="search" class="btn" placeholder="Recherche..."> -->
         </div>
     </div>
     <!-- Les cardes -->

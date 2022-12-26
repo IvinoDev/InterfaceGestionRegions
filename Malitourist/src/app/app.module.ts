@@ -25,7 +25,8 @@ import { RegiondashComponent } from './pages/admin/dashboard/regioncrud/regionda
 import { HttpClientModule } from '@angular/common/http';
 import { AddregionComponent } from './pages/admin/dashboard/regioncrud/addregion/addregion.component';
 import { ProfileComponent } from './pages/profile/profile.component';
-import {NgxPaginationModule} from 'ngx-pagination'; 
+import {NgxPaginationModule} from 'ngx-pagination';
+import {AutocompleteLibModule} from 'angular-ng-autocomplete'; 
 
 
 @NgModule({
@@ -58,7 +59,8 @@ import {NgxPaginationModule} from 'ngx-pagination';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    AutocompleteLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]

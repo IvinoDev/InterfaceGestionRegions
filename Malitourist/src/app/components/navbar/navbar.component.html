@@ -54,9 +54,9 @@
                              routerLinkActive="router-link-active"
                               class="nav-link" *ngIf="!user">Connexion</a>
                         </li>
-                        <li class="nav-item"><button [routerLink]="['/login']" 
+                        <li class="nav-item"><button
                             routerLinkActive="router-link-active"  
-                            class="nav-link">Déconnexion</button>
+                            class="nav-link" *ngIf="user" (click) = logout()>Déconnexion</button>
                         </li>
                     </ul>
                 </div>

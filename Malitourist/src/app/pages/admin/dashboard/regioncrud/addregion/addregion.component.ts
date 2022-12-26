@@ -4,6 +4,8 @@ import { Image } from './../../../../../models/image';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Component, OnInit } from '@angular/core';
 import { UrlSerializer } from '@angular/router';
+import Swal from 'sweetalert2';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-addregion',
@@ -28,16 +30,18 @@ export class AddregionComponent implements OnInit {
     }
     
 };
-  
+  ShowAdminPages: any;
   constructor(private sanitizer: DomSanitizer, private http: HttpClient) {}
 
   ngOnInit(): void {
     if (localStorage["user"]) {
       this.user = JSON.parse(localStorage["user"]);
+      this.ShowAdminPages = this.user.roles.includes["ROLE_ADMIN"];
+
     }
   }
 
-  onSubmit(form: any) {
+  onSubmit(form: NgForm) {
     console.log(this.regions);
     
     const formData = this.prepareFormdata(this.regions)
@@ -48,9 +52,16 @@ export class AddregionComponent implements OnInit {
       Authorization: "Bearer " + this.user.accessToken
     })
     return this.http.post("http://localhost:8080/regions/create", formData, {headers: header}).subscribe(data => {
-      console.log(data);
+      Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Ajoutée avec succès',
+        showConfirmButton: false,
+        timer: 1500
+      })
+      form.reset();
       
-    })
+      })
   }
 
   // Fonction pour preparer le fichier + les informations de models comme l'est dans l'api
@@ -82,6 +93,8 @@ export class AddregionComponent implements OnInit {
       this.models.image = Image;
     }
     //console.log(event);
+
+    
   }
 
 }

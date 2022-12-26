@@ -32,6 +32,7 @@ export class LoginComponent implements OnInit {
       let result = data;
       localStorage.setItem("user", JSON.stringify(result));
       this.router.navigate(['/home'])
+      location.reload();
     } else {
       console.log("identifiants incorrects");
 

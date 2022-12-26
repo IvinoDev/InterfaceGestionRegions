@@ -11,6 +11,7 @@ import { RegionService } from 'src/app/service/region.service';
 export class RegionComponent implements OnInit {
   user: any;
   list: any;
+  text: string = "nom";
 
   constructor(private regionService: RegionService, private imageService: ImageService) { 
 
@@ -35,6 +36,8 @@ export class RegionComponent implements OnInit {
       
     })
   }
+
+  
 
 
 
